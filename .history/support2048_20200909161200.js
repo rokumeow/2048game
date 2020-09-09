@@ -95,12 +95,10 @@ function noBlockVertical(column, row1, row2, board) {
     return true;
 }
 
-function noMove(board) {
+function noMove() {
     if (canMoveLeft(board) ||
         canMoveRight(board) ||
         canMoveUp(board) ||
         canMoveDown(board))
         return false;
-
-    return true;
 }

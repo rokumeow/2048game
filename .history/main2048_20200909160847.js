@@ -87,29 +87,29 @@ $(document).keydown(function (event) {
         //left
         case 37:
             if (moveLeft()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isGameOver()", 300);
+                generateOneNumber();
+                isGameOver();
             };
             break;
         //up
         case 38:
             if (moveUp()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isGameOver()", 300);
+                generateOneNumber();
+                isGameOver();
             };
             break;
         //right
         case 39:
             if (moveRight()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isGameOver()", 300);
+                generateOneNumber();
+                isGameOver();
             };
             break;
         //down
         case 40:
             if (moveDown()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isGameOver()", 300);
+                generateOneNumber();
+                isGameOver();
             };
             break;
         //default
