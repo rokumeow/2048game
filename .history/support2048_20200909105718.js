@@ -50,10 +50,3 @@ function canMoveLeft(board) {
 
     return false;
 }
-
-function noBlockHorizontal(row, col1, col2, board) {
-    for (var i = col1 + 1; i < col2; i++)
-        if (board[row][i] != 0)
-            return false;
-    return true;
-}

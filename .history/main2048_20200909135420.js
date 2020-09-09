@@ -152,6 +152,6 @@ function moveLeft() {
                 }
             }
         }
-    setTimeout("updateBoardView()", 200);
+    updateBoardView();
     return true;
 }

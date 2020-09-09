@@ -120,10 +120,6 @@ $(document).keydown(function (event) {
     }
 });
 
-function isGameOver() {
-
-}
-
 function moveLeft() {
     if (!canMoveLeft(board))
         return false;
@@ -152,6 +148,5 @@ function moveLeft() {
                 }
             }
         }
-    setTimeout("updateBoardView()", 200);
     return true;
 }

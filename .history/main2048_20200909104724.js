@@ -120,38 +120,7 @@ $(document).keydown(function (event) {
     }
 });
 
-function isGameOver() {
-
-}
-
 function moveLeft() {
     if (!canMoveLeft(board))
         return false;
-
-    //moveLeft
-    for (var i = 0; i < 4; i++)
-        for (var j = 1; j < 4; j++) {
-            if (board[i][j] != 0) {
-                for (var k = 0; k < j; k++) {
-                    if (board[i][k] == 0 && noBlockHorizontal(i, k, j, board)) {
-                        //move
-                        showMoveAnimation(i, j, i, k);
-                        board[i][k] = board[i][j];
-                        board[i][j] = 0;
-                        continue;
-                    }
-                    else if (board[i][k] == board[i][j] && noBlockHorizontal(i, k, j, board)) {
-                        //move
-                        showMoveAnimation(i, j, i, k);
-                        //add
-                        board[i][k] += board[i][j];
-                        board[i][j] = 0;
-
-                        continue;
-                    }
-                }
-            }
-        }
-    setTimeout("updateBoardView()", 200);
-    return true;
 }
