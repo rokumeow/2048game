@@ -28,6 +28,8 @@ function init() {
     }
 
     updateBoardView();
+
+    score = 0;
 }
 
 function updateBoardView() {
@@ -152,7 +154,9 @@ function moveLeft() {
                         //add
                         board[i][k] += board[i][j];
                         board[i][j] = 0;
-
+                        //add score
+                        score += 10 * (board[i][k]);
+                        updateScore(score);
                         continue;
                     }
                 }
@@ -184,7 +188,9 @@ function moveRight() {
                         //add
                         board[i][k] += board[i][j];
                         board[i][j] = 0;
-
+                        //add score
+                        score += 10 * (board[i][k]);
+                        updateScore(score);
                         continue;
                     }
                 }
@@ -216,6 +222,9 @@ function moveUp() {
                         //add
                         board[k][j] *= 2;
                         board[i][j] = 0;
+                        //add score
+                        score += 10 * (board[k][j]);
+                        updateScore(score);
                         continue;
                     }
                 }
@@ -247,7 +256,9 @@ function moveDown() {
                         //add
                         board[k][j] *= 2;
                         board[i][j] = 0;
-
+                        //add score
+                        score += 10 * (board[k][j]);
+                        updateScore(score);
                         continue;
                     }
                 }
