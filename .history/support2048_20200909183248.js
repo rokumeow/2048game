@@ -13,7 +13,7 @@ function getNumberBackgroundColor(number) {
         case 8: return "#f2b179"; break;
         case 16: return "#f59563"; break;
         case 32: return "#f67c5f"; break;
-        case 64: return "#C63300"; break;
+        case 64: return "#A42D00 "; break;
         case 128: return "#edcf72"; break;
         case 256: return "#edcc61"; break;
         case 512: return "#9c0"; break;
