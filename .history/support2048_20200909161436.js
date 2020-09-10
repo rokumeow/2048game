@@ -13,7 +13,7 @@ function getNumberBackgroundColor(number) {
         case 8: return "#f2b179"; break;
         case 16: return "#f59563"; break;
         case 32: return "#f67c5f"; break;
-        case 64: return "#C63300"; break;
+        case 64: return "#65e3b"; break;
         case 128: return "#edcf72"; break;
         case 256: return "#edcc61"; break;
         case 512: return "#9c0"; break;
@@ -24,24 +24,6 @@ function getNumberBackgroundColor(number) {
     }
 
     return "black";
-}
-
-function getNumberName(number) {
-    switch (number) {
-        case 2: return "新手仔"; break;
-        case 4: return "小学仔"; break;
-        case 8: return "初中仔"; break;
-        case 16: return "高中仔"; break;
-        case 32: return "大学仔"; break;
-        case 64: return "研究生仔"; break;
-        case 128: return "遇晓仔"; break;
-        case 256: return "聪明仔仔"; break;
-        case 512: return "厉害仔仔"; break;
-        case 1024: return "可爱仔仔"; break;
-        case 2048: return "香香仔仔"; break;
-        case 4096: return "乖乖仔仔"; break;
-        case 8192: return "究极仔仔"; break;
-    }
 }
 
 function getNumberColor(number) {

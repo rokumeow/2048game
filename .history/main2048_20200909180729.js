@@ -57,7 +57,7 @@ function updateBoardView() {
                 // 完全覆盖gridcell
                 theNumberCell.css('background-color', getNumberBackgroundColor(board[i][j]));
                 theNumberCell.css('color', getNumberColor(board[i][j]));
-                theNumberCell.text(getNumberName(board[i][j]));
+                theNumberCell.text(board[i][j]);
             }
 
             hasConflicted[i][j] = false;
@@ -95,7 +95,7 @@ function generateOneNumber() {
 
     //随机一个数字
     var randNumber = Math.random() < 0.5 ? 2 : 4;
-    //在随机位置显示随机数字    
+    //在随机位置显示随机数字
     board[randx][randy] = randNumber;
     showNumberWithAnimation(randx, randy, randNumber);
 

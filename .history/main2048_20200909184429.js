@@ -95,8 +95,14 @@ function generateOneNumber() {
 
     //随机一个数字
     var randNumber = Math.random() < 0.5 ? 2 : 4;
-    //在随机位置显示随机数字    
-    board[randx][randy] = randNumber;
+    //在随机位置显示随机数字
+    var newZai = function (randNumber) {
+        switch (randNumber) {
+            case 2: return "新手仔"; break;
+            case 4: return "小学仔"; break;
+        }
+    }
+    board[randx][randy] = newZai;
     showNumberWithAnimation(randx, randy, randNumber);
 
     return true;
