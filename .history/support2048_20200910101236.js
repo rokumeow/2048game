@@ -34,7 +34,7 @@ function getNumberName(number) {
         case 16: return "高中仔"; break;
         case 32: return "大学仔"; break;
         case 64: return "研究生仔"; break;
-        case 128: return "强强仔"; break;
+        case 128: return "遇晓仔"; break;
         case 256: return "聪明仔仔"; break;
         case 512: return "厉害仔仔"; break;
         case 1024: return "可爱仔仔"; break;
